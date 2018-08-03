@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Gmail SignUp</title>
+</head>
+<body>
+
+<div align="center"><img src="D:\\Module3Workspace\\GmailSignUp\\download.png" width="200" height="70"><br><br>
+<h1>Sign Up</h1>
+<h3>Create Your Gmail Account</h3>
+</div>
+
+<table cellpadding="4" cellspacing="4" align="center">
+	<tr><td><b>First Name:</b></td>
+		<td><input type="text" placeholder="Enter first Name" name="fname" required></td>
+	</tr>
+	<tr><td><b>Last Name:</b></td>
+		<td><input type="text" placeholder="Enter Last Name" name="lname" required></td>
+	</tr>
+	<tr><td><b>Date Of Birth:</b></td>
+		<td><input id="date" name="date" type="date" min="1000-08-14" max="2018-07-30" value=""/></td>
+	</tr>
+	<tr><td><b>Mobile No.:</b></td>
+		<td><input type="number" placeholder="Enter Mobile No." name="number" required></td>
+	</tr>
+	<tr>
+		<td><b>Gender:</b></td>
+		<td><input type="radio" name="gender" value="Male">Male<br>
+			<input type="radio" name="gender" value="Female">Female<br></td>
+	</tr>
+	<tr><td><b>Address:</b></td>
+		<td><textarea name="address" Rows="5" cols="40" tabindex="0"> </textarea></td>
+	</tr>
+	<tr><td><label for="email"><b>Email:</b></label></td>
+    	<td><input type="text" placeholder="Enter Email" name="email" required></td>
+	</tr>
+	<tr>
+   		<td><label for="psw"><b>Password:</b></label></td>
+   		<td><input type="password" placeholder="Enter Password" name="psw" required></td>
+	</tr>
+	<tr>
+   		<td><label for="psw-repeat"><b>Repeat Password:</b></label></td>
+    	<td><input type="password" placeholder="Repeat Password" name="psw-repeat" required></td>
+	</tr>	
+	<tr>
+    	<td><label>
+      	<input type="checkbox"  name="remember" style="margin-bottom:15px"> Remember me
+    </label></td>
+	</tr>
+	<tr>
+		<td><b>Security Question:</b></td>
+		<td><table><tr><td><select name="select" value="---Select que---">
+					<option class="option" value="hobby">What is your home town? </option>
+					<option class="option" value="school">What is your First School? </option>
+					<option class="option" value="color">What is your favorite color? </option>
+					</select></td></tr>
+			   <tr><td><input type="text" placeholder="Answer" name="ans" required></td></tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+	<td colspan="2"><p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p></td>
+	<td></td>
+	</tr>
+	<tr>
+	 <td><button type="button" class="cancelbtn">Cancel</button></td>
+      <td><a Href="success.html"><button type="submit" class="signupbtn">Sign Up</button></a></td>
+	</tr>
+</table>
+<a href="terms.html">Help</a>
+</body>
+</html>
