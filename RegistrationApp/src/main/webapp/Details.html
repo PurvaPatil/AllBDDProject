@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fill Details</title>
+</head>
+<body>
+<h1 style="font-family: Comic Sans Ms;text-align='center'; font-size:20pt;color:#000000;">Registration Page</h1>
+<form name="myform">
+	<table cellpadding="4" cellspacing="4" align="center">
+	<tr><td><b>First Name:</b></td>
+		<td><input type="text" placeholder="Enter first Name" name="fname" required></td>
+	</tr>
+	<tr><td><b>Last Name:</b></td>
+		<td><input type="text" placeholder="Enter Last Name" name="lname" required></td>
+	</tr>
+	<tr><td><label for="email"><b>Email:</b></label></td>
+    	<td><input type="text" placeholder="Enter Email" name="email" required></td>
+	</tr>
+	<tr><td><b>Mobile No.:</b></td>
+		<td><input type="number" placeholder="Enter Mobile No." name="mob" required></td>
+	</tr>
+	<tr><td><b>Address:</b></td>
+		<td><textarea name="address" Rows="5" cols="40" tabindex="0"> </textarea></td>
+	</tr>
+	<tr><td><b>City:</b></td>
+		<td><input type="text" placeholder="Enter City" name="city" required></td>
+	</tr>
+	<tr>
+		<td><b>State:</b></td>
+		<td><select name="state" value="---Select state---">
+					<option class="option" value="Maharashtra">Maharashtra </option>
+					<option class="option" value="Karnataka">Karnataka</option>
+					<option class="option" value="Andra">Andra Pradesh </option>
+					<option class="option" value="Punjab">Punjab </option>
+					<option class="option" value="Bengal">West Bengal </option>
+					</select>
+		</td>
+	</tr>
+	<tr>
+	 <td><button type="reset" class="reset">Reset</button></td>
+      <td><a href="Register.html"><button type="button" onclick="return formValidate()" name="next">Next</button></a></td>
+	</tr>
+</table>
+</form>
+<script language="javascript">
+function formValidate() {
+  
+	var email = document.forms["myform"]["email"].value;
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))  
+	{  
+		
+		var IndNum = /^\d{10}$/;
+		var number = document.forms["myform"]["mob"].value;
+		if(IndNum.test(number))
+        {         
+			return true;
+		}
+		else
+        {
+			alert("Your Mobile Number Is Not Valid.");
+			return false;
+		} 
+	}  
+	alert("You have entered an invalid email address!")  
+	return false;   
+}
+
+</script>
+</body>
+</html>
