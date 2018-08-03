@@ -1,0 +1,85 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3196979479,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login using invalid username and valid password",
+        "description": "",
+        "id": "user-login;login-using-invalid-username-and-valid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2723458670,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on login page",
+            "match": {
+              "location": "LoginStepDefinition.i_am_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124614369,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter invalid username as Purva and password as pp123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Purva",
+                  "offset": 26
+                },
+                {
+                  "val": "pp123",
+                  "offset": 48
+                }
+              ],
+              "location": "LoginStepDefinition.enter_invalid_username_as_Purva_and_password_as_pp(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82298916,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "alert message for invalid username",
+            "match": {
+              "location": "LoginStepDefinition.alert_message_for_invalid_username()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "User Login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]

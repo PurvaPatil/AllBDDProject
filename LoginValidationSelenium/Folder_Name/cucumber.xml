@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.18955">
+<testcase classname="User Login" name="Login using invalid username and valid password" time="6.18955">
+<system-out><![CDATA[Given I am on login page....................................................passed
+When enter invalid username as Purva and password as pp123..................passed
+Then alert message for invalid username.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
